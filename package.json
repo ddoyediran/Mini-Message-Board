@@ -1,0 +1,24 @@
+{
+  "name": "mini-message",
+  "version": "0.0.0",
+  "engines": {
+    "node": "10.16.3"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www  -e js,hbs",
+    "serverstart": "DEBUG=mini-message:* & npm run dev"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

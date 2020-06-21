@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<div>
+{{#each messages}} 
+    <p>{{#if text}}
+        <h3>{{user}} {{text}}</h3>
+        <p>{{added}}</hp>
+        {{/if}}
+    </p> 
+{{/each}}
+<a href="/new">Send message</a>
+</div>
